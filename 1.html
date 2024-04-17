@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng tính toán đơn giản</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+        <input type="string" id="inputA" placeholder="Nhập số A">
+        <input type="string" id="inputB" placeholder="Nhập số B">
+        <div class="buttons">
+            <button onclick="tinhToan('SUM')">Cộng</button>
+            <button onclick="tinhToan('SUBTRACT')">Trừ</button>
+            <button onclick="tinhToan('MULTIPLY')">Nhân</button>
+            <button onclick="tinhToan('DIVIDE')">Chia</button>
+            <button onclick="reset()">Làm mới</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>

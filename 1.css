@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Chiều cao của body là 100% chiều cao của viewport */
+    margin: 0; /* Xóa margin mặc định của body */
+    padding: 0; /* Xóa padding mặc định của body */
+    display: flex; /* Sử dụng flexbox để căn giữa phần tử con */
+    justify-content: center; /* Căn giữa phần tử con theo chiều ngang */
+    align-items: center; /* Căn giữa phần tử con theo chiều dọc */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 38px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 10px;
+}
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi màu nền và màu chữ */
+}
+
+button:hover {
+    background-color: #f0f0f0; /* Thay đổi màu nền khi di chuột vào */
+    color: #1074e0; /* Thay đổi màu chữ khi di chuột vào */
+}
